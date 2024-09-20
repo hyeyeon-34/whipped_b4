@@ -4,7 +4,7 @@ const { getDetailproduct, getProduct } = require('../controllers/getDetailproduc
 const { getProducts } = require('../controllers/getProducts');
 const { getCart } = require('../controllers/getCart');
 const { eachPurchase } = require('../controllers/eachPurchase');
-const { getAnnouncement } = require('../controllers/getCommunitycontents');
+const { getAnnouncement, getComminityDetail } = require('../controllers/getCommunitycontents');
 
 
 
@@ -15,6 +15,7 @@ router.get('/get_cart/:userId', getCart);
 router.get('/get_product/', getProduct)
 router.get('/each_purchase/:userId', eachPurchase );
 router.get('/community_announcement/', getAnnouncement );
+router.get('/community_detail/:write_number', getComminityDetail);
 
 
 module.exports = router; // router 변수를 모듈로 사용할 수 있도록 설정
