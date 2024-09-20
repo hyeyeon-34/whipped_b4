@@ -23,7 +23,9 @@ Whipped는 친환경 제품을 판매하는 쇼핑몰 웹사이트입니다. 이
 [JQuery-url]: https://jquery.com 
 
 2. **의존성 설치**
+   
    npm install
 
 3. **서버 실행**
+   
    npm run dev
